@@ -116,6 +116,7 @@ func (h *handlerAuth) Login(c echo.Context) error {
 		ID:    user.ID,
 		Email: user.Email,
 		Token: token,
+		Role:  user.Role,
 	}
 
 	return c.JSON(http.StatusOK, dto.SuccessResult{Code: http.StatusOK, Data: loginResponse})
