@@ -343,8 +343,8 @@ func convertResponseTransaction(u models.Transaction) models.Transaction {
 		ID:        u.ID,
 		StartDate: u.StartDate,
 		EndDate:   u.EndDate,
-		// UserID:    u.UserID,
-		// User:      u.User,
+		UserID:    u.UserID,
+		User:      u.User,
 		// Attache: u.Attache,
 		Status: u.Status,
 	}
