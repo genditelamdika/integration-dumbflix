@@ -8,6 +8,7 @@ type Film struct {
 	ThumbnailFilm string   `json:"thumbnailfilm" form:"thumbnailfilm" gorm:"type: varchar(255)"`
 	Year          int      `json:"year" form:"year" gorm:"type: int"`
 	Linkfilm      string   `json:"linkfilm" form:"linkfilm" gorm:"type: varchar(255)"`
+	Link          string   `json:"link" form:"link" gorm:"type: varchar(255)"`
 	CategoryID    int      `json:"categoryID" `
 	Category      Category `json:"category" `
 
