@@ -54,7 +54,5 @@ func (r *repository) GetCategoryfilm(Id int) (models.Category, error) {
 	var cate models.Category
 	err := r.db.First(&cate, Id).Error
 	return cate, err
-	// err := r.db.Delete(&film).Error
 
-	// return cate, err
 }
